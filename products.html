@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>MiscSoleTrader</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous" />
+
+        <!--link to style.css-->
+        <link rel="stylesheet" href="support/style.css" type="text/css" />
+    
+        <!--Bootstrap linking for CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <!--Bootstrap link for jQuery-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    
+        <!--Fontawesome link for FONTS-->
+        <script src="https://kit.fontawesome.com/011e87d520.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+        <script>
+            function openSlideMenu() {
+                document.getElementById('menu').style.width = '230px';
+                document.getElementById('content').style.marginLeft = '230px';
+            }
+    
+            function closeSlideMenu() {
+                document.getElementById('menu').style.width = '0';
+                document.getElementById('content').style.marginLeft = '0';
+            }
+        </script>
+    
+    </head>
+
+    <body>
+    
+        <header>
+        <div class="row no-gutters">
+
+            <!--Header containing Company name-->
+            <a class="hdr-title-color" href="index.html">
+                Miscellaneous<br> Sole Trader
+            </a>
+        </div>
+        <div id="content" class="header-background navalert-container">
+        
+            <nav class="navbar navbar-light nav-background fixed-top">
+                <button onclick="openSlideMenu()" class="slide navbar-header navbar-mst" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div id="menu" class="navside">
+                    <a href="#" class="close" onclick="closeSlideMenu()"><i class="fas fa-times"></i></a>
+                    <a id="index" href="index.html" class="item"><i class="fas fa-hotel icon"></i>Home</a>                        
+                    <a href="products.html" class="item active"><i class="fas fa-clipboard-list icon"></i>Products</a>
+                    <a href="about.html" class="item"><i class="fas fa-user-circle icon"></i>About Us</a>
+                    <a href="contact.html" class="item"><i class="fas fa-file-contract icon"></i>Contact Us</a>
+                    <a href="delretref.html" class="item"><i class="fas fa-truck icon"></i>Delivery</a>
+                    <form id="demo-2" class="item my-lg-0 last"><i class="fas fa-search icon"></i>
+                        <input id="searchbox" type="search" class="item last expanding-search mr-sm-2" aria-label="Search">
+                    </form>
+                    <ul>
+                        <li><a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a></li>
+                        <li><a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a></li>
+                        <li><a href="https://www.instagram.com/misc_sole_trader/" class="inline" target="_blank" title="misc_sole_trade"><i class="fab fa-instagram"></i> </a></li>
+                    </ul>
+                </div>
+            </nav>
+        
+        </div>
+    </header>
+
+    <section class="uppercase main-background section-center" id="main-page">
+        <div class="container-wrapper">
+            <div class="container quotes-container content-container">
+                <div class="row">
+                <!--Information on buying option-->
+                <!--<p class="click-buy"><i class="fas fa-hand-point-right"></i> Click on IMAGE to Buy <i class="fas fa-hand-point-left"></i></p>-->
+                
+                    <div class="productcard col-12 col-lg-4 col-md-6">
+                        <img class="productimage mr-3 mx-auto img-product" src="images/Flamos_55.jpg" alt ="Flamos 3Hrs">
+                        <p class="productlink">
+                            Flamos 3hrs
+                            <i class="fas fa-info-circle" title="Description"></i>
+                        </p>
+                        <div>
+                            <!--Description for the product-->
+                            <p class="para"><span>Buy from:</span>
+                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
+                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
+                                <br>1. Ideal for use in chafing dishes <br> 2. Consistent heat output - keeps food in the temperature <br> 3. Rapid heat-up - Burn time approx 150 mins each can <br> 4. Great for BBQ Buffet Parties
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="productcard col-12 col-lg-4 col-md-6">
+                        <img src="images/Ace_Keyed_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Ace Keyed Lock">
+                        <p class="productlink">
+                            Ace Keyed Lock
+                            <i class="fas fa-info-circle" title="Description"></i>
+                        </p>
+                        <div>
+                            <!--Description for the product-->
+                            <p class="para"><span>Buy from:</span>
+                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
+                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
+                                <br>1. Grade3 Standard Lock <br> 2. Includes Universal Latch <br> 3. Fits Most Doors <br> 4. Anti-pick Spool Pins <br> 5. Anti-pry Shield</p>
+                        </div>
+                    </div>
+                    
+                    <div class="productcard col-12 col-lg-4 col-md-6">
+                        <img src="images/Ace_Tapping_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Ace Tapping Tool">
+                        <p class="productlink">
+                            12" Tapping Tool
+                            <i class="fas fa-info-circle" title="Description"></i>
+                        </p>
+                        <div>
+                            <!--Description for the product-->
+                            <p class="para"><span>Buy from:</span>
+                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
+                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
+                                <br>1. 12inch wide working area <br> 2. Comfortable Rubber Handle <br> 3. Can be used for filling</p>
+                        </div>
+                    </div>
+                    
+                    <div class="productcard col-12 col-lg-4 col-md-6">
+                        <img src="images/Bayer_Path&Drive_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Bayer Weed Killer">
+                        <p class="productlink">
+                            Bayer Weed Killer
+                            <i class="fas fa-info-circle" title="Description"></i>
+                        </p>
+                        <div>
+                            <!--Description for the product-->
+                            <p class="para"><span>Buy from:</span>
+                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
+                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
+                                <br>1. Kills wide range of Weeds <br> 2. Controls most of the weeds for 3 months <br> 3. Rainfast after 6 hours <br> 4. Easy to use liquid concentrate <br> 5. Does not stain treated areas
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="productcard col-12 col-lg-4 col-md-6">
+                        <img src="images/CuprinolGoldenCedar_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Cuprinol GardenPreserver">
+                        <p class="productlink">
+                            Cuprinol GardenPreserver
+                            <i class="fas fa-info-circle" title="Description"></i>
+                        </p>
+                        <div>
+                            <!--Description for the product-->
+                            <p class="para"><span>Buy from:</span>
+                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
+                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
+                                <br>1. Preserves garden wood against rot, decay & blue stain <br> 2. Includes Universal Latch <br> 3. Fits Most Doors <br> 4. Anti-pick Spool Pins <br> 5. Anti-pry Shield
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="productcard col-12 col-lg-4 col-md-6">
+                        <img src="images/DCFix_3465378_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Oak self-adhesive film">
+                        <p class="productlink">
+                            "Oak" self-adhesive film
+                            <i class="fas fa-info-circle" title="Description"></i>
+                        </p>
+                        <div>
+                            <!--Description for the product-->
+                            <p class="para"><span>Buy from:</span>
+                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
+                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
+                                <br>1. Self-adhesive <br> 2. Measure & cut to size (use grid on backing paper) <br> 3. Can be applied to any flat surface <br> 4. Bonds in 24 hours <br> 5. Wipe clean (regular household cleaners are fine)
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="productcard col-12 col-lg-4 col-md-6">
+                        <img src="images/ForesterCD36C_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Fosters Brush">
+                        <p class="productlink">
+                            Fosters Brush
+                            <i class="fas fa-info-circle" title="Description"></i>
+                        </p>
+                        <div>
+                            <!--Description for the product-->
+                            <p class="para"><span>Buy from:</span>
+                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
+                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
+                                <br>1. Bassine stiff  bristles <br> 2. Wood back <br> 3. Overall length 27.5cm 11inch
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="productcard col-12 col-lg-4 col-md-6">
+                        <img src="images/Harris435_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Harris 9inch Roller Frame">
+                        <p class="productlink">
+                            Harris 9" Roller Frame
+                            <i class="fas fa-info-circle" title="Description"></i>
+                        </p>
+                        <div>
+                            <!--Description for the product-->
+                            <p class="para"><span>Buy from:</span>
+                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
+                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
+                                <br>1. 9" (228mm) x 1¾" (44mm) Core <br> 2. Wire cage frame roller with soft-grip for comfort and sturdy wire for control <br> 3. Suitable for use with extension poles
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="productcard col-12 col-lg-4 col-md-6">
+                        <img src="images/Harris3012_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Harris Window Scraper">
+                        <p class="productlink">
+                            Harris Window Scraper
+                            <i class="fas fa-info-circle" title="Description"></i>
+                        </p>
+                        <div>
+                            <!--Description for the product-->
+                            <p class="para"><span>Buy from:</span>
+                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
+                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
+                                <br>1. Ideal for window and ceramic tile scraper <br> 2. For removing paint from glass and other scraping and cleaning tool. <br> 3. including safety guard
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="productcard col-12 col-lg-4 col-md-6">
+                        <img src="images/IMAG1177_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Jabra Speaker">
+                        <p class="productlink">
+                            Jabra Speaker
+                            <i class="fas fa-info-circle" title="Description"></i>
+                        </p>
+                        <div>
+                            <!--Description for the product-->
+                            <p class="para"><span>Buy from:</span>
+                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
+                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
+                                <br>1. Speakerphone ideal for one-to-one and small-group conference calls <br> 2. True wideband sound for crystal-clear conversation <br> 3. Easy to transport - Compact design, integrated cable management and travel case <br> 4. Compatible with leading Unified Communications solutions and VoIP clients <br> 5. Headset port for private calls
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="productcard col-12 col-lg-4 col-md-6">
+                        <img src="images/Ronseal_AntPine_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Ronseal Antique Pine Varnish">
+                        <p class="productlink">
+                            Ronseal Antique Pine Varnish
+                            <i class="fas fa-info-circle" title="Description"></i>
+                        </p>
+                        <div>
+                            <!--Description for the product-->
+                            <p class="para"><span>Buy from:</span>
+                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
+                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
+                                <br>1. Blend of Quick Drying Varnish and Diamond Hard Varnish resins <br> 2. Increased hardness build up <br> 3. Delivers superior protection against heat, scratches and water <br> 4. Quick Drying formulation Ò touch dry in 20 minutes / recoat in 2 hours <br> 5. Protects interior wood with a beautiful fade resistant finish
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="productcard col-12 col-lg-4 col-md-6">
+                        <img src="images/Ronseal_FurGreen_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Ronseal Natural Teak Furniture Oil">
+                        <p class="productlink">
+                            Ronseal Natural Teak Furniture Oil
+                            <i class="fas fa-info-circle" title="Description"></i>
+                        </p>
+                        <div>
+                            <!--Description for the product-->
+                            <p class="para"><span>Buy from:</span>
+                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
+                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
+                                <br>1. Suitable for exterior use <br> 2. Beautiful nourished wood in half the time of a brush <br> 3. Drying Time: 2 hours <br> 4. Cover 6 sqm per Tin <br> 5. Recoat in 4 hours <br> 6. 3 Coats recommended
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="productcard col-12 col-lg-4 col-md-6">
+                        <img src="images/Ronseal_VarBlue_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Ronseal Dark Oak Varnish (750ml)">
+                        <p class="productlink">
+                            Ronseal Dark Oak Varnish (750ml)
+                            <i class="fas fa-info-circle" title="Description"></i>
+                        </p>
+                        <div>
+                            <!--Description for the product-->
+                            <p class="para"><span>Buy from:</span>
+                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
+                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
+                                <br>1. Quick Dry: 20 minutes touch dry can recoat in 1 hour <br> 2. Coats: 2 coats are normally enough, untreated wood may need 3 <br> 3. Low Odour <br> 4. Coverage: 750ml will normally treat 3 door sides with 2 coats <br> 5. Cleaning: Pad washes out in water
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="productcard col-12 col-lg-4 col-md-6">
+                        <img src="images/Stanley_30211_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Stanley STF30211">
+                        <p class="productlink">
+                            Stanley STF30211
+                            <i class="fas fa-info-circle" title="Description"></i>
+                        </p>
+                        <div>
+                            <!--Description for the product-->
+                            <p class="para"><span>Buy from:</span>
+                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
+                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
+                                <br>1. 10 x 25mm HOLLOW FIXING-NO DRILLING STING+SCREW <br> 2. Product Code: STF30211-XJ <br> 3. Load Rating: Light <br> 4. Fast and easy installation using an electric drill driver <br> 5. Self-tapping tip
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="productcard col-12 col-lg-4 col-md-6">
+                        <img src="images/Stanley_STF71020_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Stanley STF71020">
+                        <p class="productlink">
+                            Stanley STF71020
+                            <i class="fas fa-info-circle" title="Description"></i>
+                        </p>
+                        <div>
+                            <!--Description for the product-->
+                            <p class="para"><span>Buy from:</span>
+                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
+                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
+                                <br>1. 60 x 8mm Metal Dowel: (Length) 33mm x (Screw Length) 40mm <br> 2. 40 x 11mm Metal Dowel: (Length) 36mm x (Screw Length) 43mm <br> 3. The fittings all come in a tidy plastic bucket with a carry handle for easy transportation <br> 4. Fittings are built to take on a maximum 25-40kg of weight for an extended period of time
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="productcard col-12 col-lg-4 col-md-6">
+                        <img src="images/StarPack72382_55.jpg" class="productimage mr-3 mx-auto img-product" alt="StarPack Soap Holder">
+                        <p class="productlink">
+                            StarPack Soap Holder
+                            <i class="fas fa-info-circle" title="Description"></i>
+                        </p>
+                        <div>
+                            <!--Description for the product-->
+                            <p class="para"><span>Buy from:</span>
+                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
+                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
+                                <br>1. Suction grip soap holder <br> 2. Product Code: 72382 <br> 3. Contain 1 pk
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="productcard col-12 col-lg-4 col-md-6">
+                        <img src="images/StarPack73188_55.jpg" class="productimage mr-3 mx-auto img-product" alt="StarPack Wood to Metal Dowel">
+                        <p class="productlink">
+                            StarPack Wood to Metal Dowel 
+                            <i class="fas fa-info-circle" title="Description"></i>
+                        </p>
+                        <div>
+                            <!--Description for the product-->
+                            <p class="para"><span>Buy from:</span>
+                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
+                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
+                                <br>1. Self-coloured steel <br> 2. Wood to Metal Dowel Screw <br> 3. Pack of 3
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!--<div class="productcard col-12 col-lg-4 col-md-6">
+                        <img src="images/StarPack73188_55.jpg" class="productimage mr-3 mx-auto img-product" alt="StarPack Wood to Metal Dowel">
+                        <p class="productlink">
+                            StarPack Wood to Metal Dowel 
+                            <i class="fas fa-info-circle" title="Description"></i>
+                        </p>
+                        <div>
+                            <!--Description for the product-->
+                            <!--<p class="para"><span>Buy from:</span>
+                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
+                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
+                                <br>1. Self-coloured steel <br> 2. Wood to Metal Dowel Screw <br> 3. Pack of 3
+                            </p>
+                        </div>
+                    </div>-->
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="fixed-footer container-fluid footer-container">
+        <div id="footer-details" class="row footer-text">
+            <div class="col-sm col-md col-lg">
+                
+                <!--Company Information-->
+                <p class="inline-block">
+                    We are trading on <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" target="_blank"><i class="fab fa-amazon"></i></a> as MiscSoleTrader and on <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" target="_blank"><i class="fab fa-ebay"></i></a> as MiscellaneousSoleTrader
+                </p>
+                
+                <!--Social Media links-->
+                <ul class="list-inline social-links">
+                    <h6 class="footer-caption uppercase general-sub list-inline-item">Social Media : </h6>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.facebook.com/Miscellaneous-Sole-Trader-2060490577578980/" title="Miscellaneous Sole Trader">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item ">
+                        <a target="_blank" href="https://www.instagram.com/misc_sole_trader/" title="misc_sole_trade">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only ">Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--Information on Image click using Modal-->
+    <div class="modal" tabindex="-1" role="dialog" id="ImageClick">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-microphone-alt"></i> Please be advice that</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Buying is not available at present from this website</p>
+                    <p>To place an order please visit <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" target="_blank"><i class="fab fa-amazon"></i></a> or <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" target="_blank"><i class="fab fa-ebay"></i></a> where we are trading under <span>MiscSoleTrader</span> and <span>MiscellaneousSoleTrader</span> respectively.</p>
+                    <p>Thank you</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="tether.js"></script>
+    <script src="support/products.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    
+    <!--jQuery for products descriptoin using TOOLTIP-->
+    <script>
+        $(function () 
+        {
+            $('[data-toggle="tooltip"]').tooltip()
+        } );
+    </script>
+</body>
+
+</html>
