@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 
- <head>
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>MiscSoleTrader</title>
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous" />
 
         <!--link to style.css-->
         <link rel="stylesheet" href="support/style.css" type="text/css" />
     
         <!--Bootstrap linking for CSS-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.css" type="text/css" />
     
         <!--Bootstrap link for jQuery-->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <!--<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>-->
+        
+        <!--Supporting JavaScript file for Charts-->
+        <script type="text/javascript" src="support/d3.min.js"></script>
+        <script type="text/javascript" src="support/crossfilter.min.js"></script>
+        <script type="text/javascript" src="support/dc.min.js"></script>
+        <script type="text/javascript" src="support/queue.min.js"></script>
     
         <!--Fontawesome link for FONTS-->
         <script src="https://kit.fontawesome.com/011e87d520.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+        
         <script>
+            /*JavaScript for sliding Menu in from Left*/
             function openSlideMenu() {
                 document.getElementById('menu').style.width = '230px';
                 document.getElementById('content').style.marginLeft = '230px';
             }
-    
+            
+            /*JavaScript for sliding Menu out to Left*/
             function closeSlideMenu() {
                 document.getElementById('menu').style.width = '0';
                 document.getElementById('content').style.marginLeft = '0';
@@ -39,131 +46,279 @@
     <body>
     
         <header>
-        <div class="row no-gutters">
-
-            <!--Header containing Company name-->
-            <a class="hdr-title-color" href="index.html">
-                Miscellaneous<br> Sole Trader
-            </a>
-        </div>
-        <div id="content" class="header-background navalert-container">
+            <div class="row no-gutters">
         
-            <nav class="navbar navbar-light nav-background fixed-top">
-                <button onclick="openSlideMenu()" class="slide navbar-header navbar-mst" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div id="menu" class="navside">
-                    <a href="#" class="close" onclick="closeSlideMenu()"><i class="fas fa-times"></i></a>
-                    <a id="index" href="index.html" class="item active"><i class="fas fa-hotel icon"></i>Home</a>                        
-                    <a href="products.html" class="item"><i class="fas fa-clipboard-list icon"></i>Products</a>
-                    <a href="about.html" class="item"><i class="fas fa-user-circle icon"></i>About Us</a>
-                    <a href="contact.html" class="item"><i class="fas fa-file-contract icon"></i>Contact Us</a>
-                    <a href="delretref.html" class="item"><i class="fas fa-truck icon"></i>Delivery</a>
-                    <form id="demo-2" class="item my-lg-0 last"><i class="fas fa-search icon"></i>
-                        <input id="searchbox" type="search" class="item last expanding-search mr-sm-2" aria-label="Search">
-                    </form>
-                    <ul>
-                        <li><a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a></li>
-                        <li><a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a></li>
-                        <li><a href="https://www.instagram.com/misc_sole_trader/" class="inline" target="_blank" title="misc_sole_trade"><i class="fab fa-instagram"></i> </a></li>
-                    </ul>
-                </div>
-            </nav>
+                <!--Header containing Company name-->
+                <a class="hdr-title-color" href="index.html">
+                    Miscellaneous<br> Sole Trader
+                </a>
+            </div>
+            <div id="content" class="header-background navalert-container">
         
-        </div>
-    </header>
+                <nav class="navbar navbar-light nav-background fixed-top">
+                    
+                    <!--Button which bring side menu Out-->
+                    <button onclick="openSlideMenu()" class="slide navbar-header navbar-mst" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                    </button>
+                    <div id="menu" class="navside">
+                        <!--Image which closes side Menu In on Left-->
+                        <a href="#" class="close" onclick="closeSlideMenu()"><i class="fas fa-times"></i></a>
+                        <a id="index" href="index.html" class="item active"><i class="fas fa-hotel icon"></i>Home</a>
+                        <a href="products.html" class="item"><i class="fas fa-clipboard-list icon"></i>Products</a>
+                        <a href="about.html" class="item"><i class="fas fa-user-circle icon"></i>About Us</a>
+                        <a href="contact.html" class="item"><i class="fas fa-file-contract icon"></i>Contact Us</a>
+                        <a href="delretref.html" class="item"><i class="fas fa-truck icon"></i>Delivery</a>
+                        <form id="demo-2" class="item my-lg-0 last"><i class="fas fa-search icon"></i>
+                            <input id="searchbox" type="search" class="item last expanding-search mr-sm-2" aria-label="Search">
+                        </form>
+                        <ul> <!--Link to Mrketplaces and Social Media-->
+                            <li><a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a></li>
+                            <li><a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a></li>
+                            <li><a href="https://www.instagram.com/misc_sole_trader/" class="inline" target="_blank" title="misc_sole_trade"><i class="fab fa-instagram"></i> </a></li>
+                        </ul>
+                    </div>
+                </nav>
+        
+            </div>
+        </header>
     
-    <section id="main-page">
-        <div class="slideshow-container">
-                
+        <section id="main-page">
         
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade-slide">
-                    <div class="numbertext">1 / 5</div>
-                    <img src="images/BlackMagicDesign_145.jpg" style="width:100%" alt="Black Magic">
-                    <div class="text">Black Magic</div>
-                </div>
-        
-                <div class="mySlides fade-slide">
-                    <div class="numbertext">2 / 5</div>
-                    <img src="images/DoorPlan145.jpg" style="width:100%" alt="Chrome Handle">
-                    <div class="text">Chrome Handle</div>
-                </div>
-        
-                <div class="mySlides fade-slide">
-                    <div class="numbertext">3 / 5</div>
-                    <img src="images/HarrisPoleSander145.jpg" style="width:100%" alt="Harris Pole Sander">
-                    <div class="text">Harris Pole Sander</div>
-                </div>
-                
-                <div class="mySlides fade-slide">
-                    <div class="numbertext">4 / 5</div>
-                    <img src="images/Jabra145.jpg" style="width:100%" alt="Jabra Speaker">
-                    <div class="text">Jabra Speaker</div>
-                </div>
-                
-                <div class="mySlides fade-slide">
-                    <div class="numbertext">5 / 5</div>
-                    <img src="images/Ronseal145.jpg" style="width:100%" alt="Ronseal Varnish">
-                    <div class="text">Ronseal Varnish</div>
-                </div>
-        
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-        
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-            </div>
-    </section>     
-    
-    <footer class="fixed-footer container-fluid footer-container">
-        <div id="footer-details" class="row footer-text">
-            <div class="col-sm col-md col-lg">
-                
-                <!--Company Information-->
-                <p class="inline-block">
-                    We are trading on <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" target="_blank"><i class="fab fa-amazon"></i></a> as MiscSoleTrader and on <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" target="_blank"><i class="fab fa-ebay"></i></a> as MiscellaneousSoleTrader
-                </p>
-                
-                <!--Social Media links-->
-                <!--<ul class="list-inline social-links">
-                    <h6 class="footer-caption uppercase general-sub list-inline-item">Social Media : </h6>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.facebook.com/Miscellaneous-Sole-Trader-2060490577578980/" title="Miscellaneous Sole Trader">
-                            <i class="fab fa-facebook" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item ">
-                        <a target="_blank" href="https://www.instagram.com/misc_sole_trader/" title="misc_sole_trade">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only ">Instagram</span>
-                        </a>
-                    </li>
-                </ul>-->
-            </div>
-        </div>
-    </footer>
+            <!--Amazon Heading-->
+            <h3 class="dashboard-heading">Amazon's Last 6 Months Sales figures for Every Week</h3>
 
-    <script src="support/slide.js"></script>
-    <script type="text/javascript" src="support/graphs.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js" integrity="sha256-xKeoJ50pzbUGkpQxDYHD7o7hxe0LaOGeguUidbq6vis=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js" integrity="sha256-arMsf+3JJK2LoTGqxfnuJPFTU4hAK57MtIPdFpiHXOU=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-</body>
+            <div>
+                <div class="row-selector col-12 inline">
+                    <!--Amazon Month selector-->
+                    <div id="month_select" class="selector"><span class="selector-span">Select Month :></span></div>
+                </div>
+                <div class="row-graph">
+                    <!--Amazon Charts-->
+                    <div id="daily_sales" class="col-12 col-lg-6 col-md-12 chart-decoration"><span class="selector-span">Turn over Week by Week for last 6 Months</span></div>
+                    <div id="daily_units" class="col-12 col-lg-6 col-md-12 chart-decoration"><span class="selector-span">Amount of Units Sold every Week</span></div>
+                    <div id="average_price" class="col-12 col-lg-6 col-md-12 chart-decoration"><span class="selector-span">Average Price of Orders received each Week</span></div>
+                    <div id="average_price_unit" class="col-12 col-lg-6 col-md-12 chart-decoration"><span class="selector-span">Average Price agaist Orders received every Week</span></div>
+                </div>
+                <div class="feedback-section">
+                    <!--Table Heading for Amazon Feedbacks-->
+                    <h4 class="feedback-head">Amazon's Feedback(s):</h4>
+        
+                    <!--Table containing Amazon feedbacks-->
+                    <table class="center">
+                        <tr>
+                            <th style="width:20%">Order No.</th>
+                            <th style="width:80%">Comments</th>
+                        </tr>
+                        <tr>
+                            <td class="order-table">206-1746216-6631547</td>
+                            <td class="order-comment">Item ordered obviously missing in post.However the company have responded quickly and sent a replacement which arrived today so all is well.Company recommended for putting the matter right very promptly</td>
+                        </tr>
+                        <tr>
+                            <td class="order-table">202-3307801-8746749</td>
+                            <td class="order-comment">Very fast and efficient service. Good value. Thank you.</td>
+                        </tr>
+                        <tr>
+                            <td class="order-table">206-3093107-4105159</td>
+                            <td class="order-comment">Great, arrived much earlier than estimated, many thanks</td>
+                        </tr>
+                        <tr>
+                            <td class="order-table">203-5952177-9475525</td>
+                            <td class="order-comment">Luvly jubly</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        
+            <!--eBay Heading-->
+            <h3 class="dashboard-heading">eBay's Last 4 Months Sales figures</h3>
+            
+            <div>
+                <div class="row-selector col-12 inline">
+                    <!--eBay Month selector-->
+                    <div id="emonth_select" class="selector"><span class="selector-span">Select Month :></span></div>
+                </div>
+                <div class="row-graph">
+                    <!--eBay charts-->
+                    <div id="edaily_sales" class="col-12 col-lg-6 col-md-12 chart-decoration"><span class="selector-span">Turn-over Day by Day for last 4 Months</span></div>
+                    <div id="edaily_units" class="col-12 col-lg-6 col-md-12 chart-decoration"><span class="selector-span">Amount of Units Sold every Day</span></div>
+                    <div id="eweekly_offer" class="col-12 col-lg-6 col-md-12 chart-decoration"><span class="selector-span">Amount spend by every County</span></div>
+                    <div id="eitem_offer" class="col-12 col-lg-6 col-md-12 chart-decoration"><span class="selector-span">Amount spend on every Product</span></div>
+                </div>
+                <div>
+                    <!--Table Heading for eBay feedbacks-->
+                    <h4 class="feedback-head">eBay's Feedback(s):</h4>
+        
+                    <!--Table accomodating eBay Feedbacks-->
+                    <table class="center">
+                        <tr>
+                            <th style="width:20%">Item No.</th>
+                            <th style="width:80%">Comments</th>
+                        </tr>
+                        <tr>
+                            <td class="order-table">264450071732</td>
+                            <td class="order-comment">Did not receive so seller sent another one ASAP- Received today (2nd)AAAAAA+++++</td>
+                        </tr>
+                        <tr>
+                            <td class="order-table">264473428034</td>
+                            <td class="order-comment">Thanks for a quick delivery,Hope to do business with you again xx</td>
+                        </tr>
+                        <tr>
+                            <td class="order-table">264470181391</td>
+                            <td class="order-comment">fantastic easy transaction. great packaging, first class. well recommended. AAA+</td>
+                        </tr>
+                        <tr>
+                            <td class="order-table">264390742827</td>
+                            <td class="order-comment">Very happy with purchase which is exactly as described and arrived well packaged</td>
+                        </tr>
+                        <tr>
+                            <td class="order-table">263720306055</td>
+                            <td class="order-comment">5 STAR SELLER ⭐️⭐️⭐️⭐⭐️ received today thank you 👍😊😉 highly recommended</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>    
+    
+        <footer class="fixed-footer container-fluid footer-container">
+            <div id="footer-details" class="row footer-text">
+                <div class="col-sm col-md col-lg">
+        
+                    <!--Company Information-->
+                    <p class="inline-block">
+                        We are trading on <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" target="_blank"><i class="fab fa-amazon"></i></a> as MiscSoleTrader and on <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" target="_blank"><i class="fab fa-ebay"></i></a> as MiscellaneousSoleTrader
+                    </p>
+        
+                </div>
+            </div>
+        </footer>
+        
+        <!--JavaScript for all eBay charts-->
+        <script>
+        queue() /*Connecting DataBase for eBay Charts*/
+            .defer(d3.csv, "support/eBaySales.csv")
+            .await(makeGraphs);
+        
+        /*function for inputting data for output*/
+        function makeGraphs(error, esalesMonthly) {
+            var ndx = crossfilter(esalesMonthly);
+            
+            /*Turning string Date into Date format*/
+            var parseDate = d3.time.format("%d/%m/%y").parse;
+            esalesMonthly.forEach(function(d) {
+                d.Date = parseDate(d.Date);
+            });
+    
+            show_emonth_select(ndx);
+    
+            show_edaily_sales(ndx);
+    
+            show_edaily_units(ndx);
+            
+            show_eweekly_offer(ndx)
+            
+            show_eitem_offer(ndx);
+            
+            /*Drop down Menu for choosing Month*/
+            function show_emonth_select(ndx) {
+                var dim_select = ndx.dimension(dc.pluck('Month'));
+                var group = dim_select.group();
+    
+    
+                dc.selectMenu('#emonth_select')
+                    .dimension(dim_select)
+                    .group(group);
+            }
+    
+            /*Chart for "Turn-over Day by Day for last 4 Months"*/
+            function show_edaily_sales(ndx) {
+                var dim_date = ndx.dimension(dc.pluck('Date')); /*xAxis Data*/
+                var sales = dim_date.group().reduceSum(dc.pluck('Price')); /*yAxis Data*/
+                
+                /*Keep xAxis Date in Order*/
+                var minDate = dim_date.bottom(1)[0].Date;
+                var maxDate = dim_date.top(1)[0].Date;
+    
+                dc.lineChart('#edaily_sales') 
+                    .width($('#chartCumulativeDVH').innerWidth()) /*Automatic chart WIDTH adjustment according to screen size*/
+                    .height($('#chartCumulativeDVH').innerHeight()) /*Automatic chart HEIGHT adjustment according to screen size*/
+                    .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+                    .dimension(dim_date)
+                    .group(sales)
+                    .brushOn(false)
+                    .transitionDuration(800)
+                    .x(d3.time.scale().domain([minDate, maxDate]))
+                    .colors('#07711f')
+                    .yAxisLabel('Daily Sales (£)')
+                    .yAxis().ticks(8);
+            }
+    
+            /*Chart for "Amount of Units Sold every Day"*/
+            function show_edaily_units(ndx) {
+                var dim_date = ndx.dimension(dc.pluck('Date')); 
+                var units = dim_date.group().reduceSum(dc.pluck('Quantity')); 
+                
+                /*Keep xAxis Date in Order*/
+                var minDate = dim_date.bottom(1)[0].Date;
+                var maxDate = dim_date.top(1)[0].Date;
+    
+                dc.barChart('#edaily_units')
+                    .width($('#chartCumulativeDVH').innerWidth()) /*Automatic chart WIDTH adjustment according to screen size*/
+                    .height($('#chartCumulativeDVH').innerHeight()) /*Automatic chart HEIGHT adjustment according to screen size*/
+                    .margins({ top: 10, right: 50, bottom: 30, left: 50 })
+                    .dimension(dim_date)
+                    .group(units)
+                    .brushOn(true)
+                    .transitionDuration(800)
+                    .x(d3.time.scale().domain([minDate, maxDate]))
+                    .colors('#07711f')
+                    .xUnits(function(){return 75;})
+                    .yAxisLabel('Daily Units')
+                    .yAxis().ticks(8);
+            }
+            
+            /*Chart for "Amount spend by every County"*/
+            function show_eweekly_offer(ndx) {
+                
+                var county_dim = ndx.dimension(dc.pluck('County'));
+                var spend = county_dim.group().reduceSum(dc.pluck('Price'));
+                
+                dc.pieChart('#eweekly_offer')
+                    .width($('#chartCumulativeDVH').innerWidth())
+                    .height($('#chartCumulativeDVH').innerHeight())
+                    /*.height(330)
+                    .radius(150)*/
+                    .transitionDuration(1500)
+                    .dimension(county_dim)
+                    .group(spend);
+            }
+            
+            /*Chart for "Amount spend on every Product"*/
+            function show_eitem_offer(ndx) {
+                
+                var item_dim = ndx.dimension(dc.pluck('Item'));
+                var spend = item_dim.group().reduceSum(dc.pluck('Price'));
+                
+                dc.pieChart('#eitem_offer')
+                    .width($('#chartCumulativeDVH').innerWidth())
+                    .height($('#chartCumulativeDVH').innerHeight())
+                    /*.height(330)
+                    .radius(150)*/
+                    .transitionDuration(1500)
+                    .dimension(item_dim)
+                    .group(spend);
+            }
+            
+            dc.renderAll();
+        }
+    </script>
+        
+        <!--Supporting JavaScript file link for Menu sliding in-->
+        <script src="support/slide.js"></script>
+        
+        <!--Supporting JavaScript file link for Amazon Charts-->
+        <script type="text/javascript" src="support/graphs.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    </body>
 
 </html>

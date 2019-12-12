@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
- <head>
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>MiscSoleTrader</title>
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous" />
 
         <!--link to style.css-->
         <link rel="stylesheet" href="support/style.css" type="text/css" />
@@ -22,12 +20,15 @@
         <!--Fontawesome link for FONTS-->
         <script src="https://kit.fontawesome.com/011e87d520.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+        
         <script>
+            /*JavaScript for sliding Menu in from Left*/
             function openSlideMenu() {
                 document.getElementById('menu').style.width = '230px';
                 document.getElementById('content').style.marginLeft = '230px';
             }
-    
+            
+            /*JavaScript for sliding Menu out to Left*/
             function closeSlideMenu() {
                 document.getElementById('menu').style.width = '0';
                 document.getElementById('content').style.marginLeft = '0';
@@ -49,10 +50,13 @@
         <div id="content" class="header-background navalert-container">
         
             <nav class="navbar navbar-light nav-background fixed-top">
+                
+                <!--Button which bring side menu Out-->
                 <button onclick="openSlideMenu()" class="slide navbar-header navbar-mst" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div id="menu" class="navside">
+                    <!--Image which closes side Menu In on Left-->
                     <a href="#" class="close" onclick="closeSlideMenu()"><i class="fas fa-times"></i></a>
                     <a id="index" href="index.html" class="item"><i class="fas fa-hotel icon"></i>Home</a>                        
                     <a href="products.html" class="item active"><i class="fas fa-clipboard-list icon"></i>Products</a>
@@ -62,7 +66,7 @@
                     <form id="demo-2" class="item my-lg-0 last"><i class="fas fa-search icon"></i>
                         <input id="searchbox" type="search" class="item last expanding-search mr-sm-2" aria-label="Search">
                     </form>
-                    <ul>
+                    <ul> <!--Link to Mrketplaces and Social Media-->
                         <li><a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a></li>
                         <li><a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a></li>
                         <li><a href="https://www.instagram.com/misc_sole_trader/" class="inline" target="_blank" title="misc_sole_trade"><i class="fab fa-instagram"></i> </a></li>
@@ -73,14 +77,14 @@
         </div>
     </header>
 
-    <section class="uppercase main-background section-center" id="main-page">
+        <section class="uppercase main-background section-center" id="main-page">
         <div class="container-wrapper">
             <div class="container quotes-container content-container">
                 <div class="row">
-                <!--Information on buying option-->
-                <!--<p class="click-buy"><i class="fas fa-hand-point-right"></i> Click on IMAGE to Buy <i class="fas fa-hand-point-left"></i></p>-->
-                
+                    
                     <div class="productcard col-12 col-lg-4 col-md-6">
+                        
+                        <!--Product Image-->
                         <img class="productimage mr-3 mx-auto img-product" src="images/Flamos_55.jpg" alt ="Flamos 3Hrs">
                         <p class="productlink">
                             Flamos 3hrs
@@ -97,6 +101,7 @@
                     </div>
                     
                     <div class="productcard col-12 col-lg-4 col-md-6">
+                        <!--Product Image-->
                         <img src="images/Ace_Keyed_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Ace Keyed Lock">
                         <p class="productlink">
                             Ace Keyed Lock
@@ -112,6 +117,7 @@
                     </div>
                     
                     <div class="productcard col-12 col-lg-4 col-md-6">
+                        <!--Product Image-->
                         <img src="images/Ace_Tapping_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Ace Tapping Tool">
                         <p class="productlink">
                             12" Tapping Tool
@@ -127,6 +133,7 @@
                     </div>
                     
                     <div class="productcard col-12 col-lg-4 col-md-6">
+                        <!--Product Image-->
                         <img src="images/Bayer_Path&Drive_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Bayer Weed Killer">
                         <p class="productlink">
                             Bayer Weed Killer
@@ -143,6 +150,7 @@
                     </div>
                     
                     <div class="productcard col-12 col-lg-4 col-md-6">
+                        <!--Product Image-->
                         <img src="images/CuprinolGoldenCedar_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Cuprinol GardenPreserver">
                         <p class="productlink">
                             Cuprinol GardenPreserver
@@ -159,6 +167,7 @@
                     </div>
                     
                     <div class="productcard col-12 col-lg-4 col-md-6">
+                        <!--Product Image-->
                         <img src="images/DCFix_3465378_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Oak self-adhesive film">
                         <p class="productlink">
                             "Oak" self-adhesive film
@@ -175,6 +184,7 @@
                     </div>
                     
                     <div class="productcard col-12 col-lg-4 col-md-6">
+                        <!--Product Image-->
                         <img src="images/ForesterCD36C_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Fosters Brush">
                         <p class="productlink">
                             Fosters Brush
@@ -191,6 +201,7 @@
                     </div>
                     
                     <div class="productcard col-12 col-lg-4 col-md-6">
+                        <!--Product Image-->
                         <img src="images/Harris435_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Harris 9inch Roller Frame">
                         <p class="productlink">
                             Harris 9" Roller Frame
@@ -207,6 +218,7 @@
                     </div>
                     
                     <div class="productcard col-12 col-lg-4 col-md-6">
+                        <!--Product Image-->
                         <img src="images/Harris3012_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Harris Window Scraper">
                         <p class="productlink">
                             Harris Window Scraper
@@ -223,6 +235,7 @@
                     </div>
                     
                     <div class="productcard col-12 col-lg-4 col-md-6">
+                        <!--Product Image-->
                         <img src="images/IMAG1177_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Jabra Speaker">
                         <p class="productlink">
                             Jabra Speaker
@@ -239,6 +252,7 @@
                     </div>
                     
                     <div class="productcard col-12 col-lg-4 col-md-6">
+                        <!--Product Image-->
                         <img src="images/Ronseal_AntPine_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Ronseal Antique Pine Varnish">
                         <p class="productlink">
                             Ronseal Antique Pine Varnish
@@ -255,6 +269,7 @@
                     </div>
                     
                     <div class="productcard col-12 col-lg-4 col-md-6">
+                        <!--Product Image-->
                         <img src="images/Ronseal_FurGreen_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Ronseal Natural Teak Furniture Oil">
                         <p class="productlink">
                             Ronseal Natural Teak Furniture Oil
@@ -271,6 +286,7 @@
                     </div>
                     
                     <div class="productcard col-12 col-lg-4 col-md-6">
+                        <!--Product Image-->
                         <img src="images/Ronseal_VarBlue_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Ronseal Dark Oak Varnish (750ml)">
                         <p class="productlink">
                             Ronseal Dark Oak Varnish (750ml)
@@ -287,6 +303,7 @@
                     </div>
 
                     <div class="productcard col-12 col-lg-4 col-md-6">
+                        <!--Product Image-->
                         <img src="images/Stanley_30211_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Stanley STF30211">
                         <p class="productlink">
                             Stanley STF30211
@@ -303,6 +320,7 @@
                     </div>
                     
                     <div class="productcard col-12 col-lg-4 col-md-6">
+                        <!--Product Image-->
                         <img src="images/Stanley_STF71020_55.jpg" class="productimage mr-3 mx-auto img-product" alt="Stanley STF71020">
                         <p class="productlink">
                             Stanley STF71020
@@ -319,6 +337,7 @@
                     </div>
                     
                     <div class="productcard col-12 col-lg-4 col-md-6">
+                        <!--Product Image-->
                         <img src="images/StarPack72382_55.jpg" class="productimage mr-3 mx-auto img-product" alt="StarPack Soap Holder">
                         <p class="productlink">
                             StarPack Soap Holder
@@ -335,6 +354,7 @@
                     </div>
                     
                     <div class="productcard col-12 col-lg-4 col-md-6">
+                        <!--Product Image-->
                         <img src="images/StarPack73188_55.jpg" class="productimage mr-3 mx-auto img-product" alt="StarPack Wood to Metal Dowel">
                         <p class="productlink">
                             StarPack Wood to Metal Dowel 
@@ -349,95 +369,45 @@
                             </p>
                         </div>
                     </div>
-                    
-                    <!--<div class="productcard col-12 col-lg-4 col-md-6">
-                        <img src="images/StarPack73188_55.jpg" class="productimage mr-3 mx-auto img-product" alt="StarPack Wood to Metal Dowel">
-                        <p class="productlink">
-                            StarPack Wood to Metal Dowel 
-                            <i class="fas fa-info-circle" title="Description"></i>
-                        </p>
-                        <div>
-                            <!--Description for the product-->
-                            <!--<p class="para"><span>Buy from:</span>
-                                <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a> <span>or</span>
-                                <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a>
-                                <br>1. Self-coloured steel <br> 2. Wood to Metal Dowel Screw <br> 3. Pack of 3
-                            </p>
-                        </div>
-                    </div>-->
-                    
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="fixed-footer container-fluid footer-container">
+        <footer class="fixed-footer container-fluid footer-container">
         <div id="footer-details" class="row footer-text">
             <div class="col-sm col-md col-lg">
-                
+    
                 <!--Company Information-->
                 <p class="inline-block">
-                    We are trading on <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" target="_blank"><i class="fab fa-amazon"></i></a> as MiscSoleTrader and on <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" target="_blank"><i class="fab fa-ebay"></i></a> as MiscellaneousSoleTrader
+                    We are trading on <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" target="_blank"><i class="fab fa-amazon"></i></a> as MiscSoleTrader and on <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader"
+                        target="_blank"><i class="fab fa-ebay"></i></a> as MiscellaneousSoleTrader
                 </p>
-                
-                <!--Social Media links-->
-                <ul class="list-inline social-links">
-                    <h6 class="footer-caption uppercase general-sub list-inline-item">Social Media : </h6>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.facebook.com/Miscellaneous-Sole-Trader-2060490577578980/" title="Miscellaneous Sole Trader">
-                            <i class="fab fa-facebook" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item ">
-                        <a target="_blank" href="https://www.instagram.com/misc_sole_trader/" title="misc_sole_trade">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only ">Instagram</span>
-                        </a>
-                    </li>
-                </ul>
+    
             </div>
         </div>
     </footer>
 
-    <!--Information on Image click using Modal-->
-    <div class="modal" tabindex="-1" role="dialog" id="ImageClick">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><i class="fas fa-microphone-alt"></i> Please be advice that</h5>
-                </div>
-                <div class="modal-body">
-                    <p>Buying is not available at present from this website</p>
-                    <p>To place an order please visit <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" target="_blank"><i class="fab fa-amazon"></i></a> or <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" target="_blank"><i class="fab fa-ebay"></i></a> where we are trading under <span>MiscSoleTrader</span> and <span>MiscellaneousSoleTrader</span> respectively.</p>
-                    <p>Thank you</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+        <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+        <script src="tether.js"></script>
     
-    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
-    <script src="tether.js"></script>
-    <script src="support/products.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+        <!--Supporting JavaScript file link for Menu sliding in-->
+        <script src="support/slide.js"></script>
     
-    <!--jQuery for products descriptoin using TOOLTIP-->
-    <script>
-        $(function () 
-        {
-            $('[data-toggle="tooltip"]').tooltip()
-        } );
-    </script>
-</body>
+        <!--Supporting Javascript file for -->    
+        <script src="support/products.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    
+        <!--jQuery for products description rolling Up and Down-->
+        <script>
+            $(document).ready(function() {
+                $(".fas").click(function() {
+                    $(this).parents('p').siblings('div').children('p').slideToggle(500);
+                });
+            });
+        </script>
+    
+    </body>
 
 </html>

@@ -7,18 +7,16 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>MiscSoleTrader</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous" />
-
         <!--link to style.css-->
         <link rel="stylesheet" href="support/style.css" type="text/css" />
     
         <!--Bootstrap linking for CSS-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.css" type="text/css" />
     
         <!--Bootstrap link for jQuery-->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    
+        
         <!--Fontawesome link for FONTS-->
         <script src="https://kit.fontawesome.com/011e87d520.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
@@ -39,128 +37,111 @@
     <body>
     
         <header>
-        <div class="row no-gutters">
+    <div class="row no-gutters">
 
-            <!--Header containing Company name-->
-            <a class="hdr-title-color" href="index.html">
+        <!--Header containing Company name-->
+        <a class="hdr-title-color" href="index.html">
                 Miscellaneous<br> Sole Trader
             </a>
-        </div>
-        <div id="content" class="header-background navalert-container">
-        
-            <nav class="navbar navbar-light nav-background fixed-top">
-                <button onclick="openSlideMenu()" class="slide navbar-header navbar-mst" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    </div>
+    <div id="content" class="header-background navalert-container">
+
+        <nav class="navbar navbar-light nav-background fixed-top">
+
+            <!--Button which bring side menu Out-->
+            <button onclick="openSlideMenu()" class="slide navbar-header navbar-mst" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
-                <div id="menu" class="navside">
-                    <a href="#" class="close" onclick="closeSlideMenu()"><i class="fas fa-times"></i></a>
-                    <a id="index" href="index.html" class="item"><i class="fas fa-hotel icon"></i>Home</a>                        
-                    <a href="products.html" class="item"><i class="fas fa-clipboard-list icon"></i>Products</a>
-                    <a href="about.html" class="item"><i class="fas fa-user-circle icon"></i>About Us</a>
-                    <a href="contact.html" class="item active"><i class="fas fa-file-contract icon"></i>Contact Us</a>
-                    <a href="delretref.html" class="item"><i class="fas fa-truck icon"></i>Delivery</a>
-                    <form id="demo-2" class="item my-lg-0 last"><i class="fas fa-search icon"></i>
-                        <input id="searchbox" type="search" class="item last expanding-search mr-sm-2" aria-label="Search">
-                    </form>
-                    <ul>
-                        <li><a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a></li>
-                        <li><a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a></li>
-                        <li><a href="https://www.instagram.com/misc_sole_trader/" class="inline" target="_blank" title="misc_sole_trade"><i class="fab fa-instagram"></i> </a></li>
-                    </ul>
-                </div>
-            </nav>
-        
-        </div>
-    </header>
-    
-    <section class="main-background container-fluid" id="container">
-        <div class="row" id="main">
-            <div class="col contact-form">
-
-                <!--Form Headings-->
-                <h3 class="contact-heading uppercase text-center">Question or Query</h3>
-                <h5 class="contact-caption text-center">(Please get in touch)</h5>
-
-                <!--Form-->
-                <div class="center-form">
-                    <form id="contact-form" >
-                        <input type="text" name="name" id="exampleInputName" class="form-contact" placeholder="Name*" required />
-                        <input type="text" name="amazon" id="amazonproduct" class="form-contact" placeholder="Product Name or URL (for Amazon)%" />
-                        <input type="text" name="ebay" id="ebayitem" class="form-contact" placeholder="eBay item Number" />
-                        <input type="email" name="email" id="emailaddress" class="form-contact" placeholder="Email*" required />
-                        <textarea rows="5" name="projectsummary" id="projectsummary" class="form-contact" placeholder="Description*" required></textarea>
-                        <p> * = Required fields</p>
-                        <p> % = If you already have placed an order on Amazon, please provide us with order number instead</p>
-                        <div class="form-row text-left">
-                            <div class="col-2">
-                                <button type="submit" class="btn-contact btn-outline-contact">Send</button>
-                            </div>
-                            <div class="alert alert-success" id="success" style="display:none;">
-							  <strong>Query submited Successfully!</strong> We will contact you soon.
-							</div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <footer class="fixed-footer container-fluid footer-container">
-        <div id="footer-details" class="row footer-text">
-            <div class="col-sm col-md col-lg">
-                
-                <!--Company Information-->
-                <p class="inline-block">
-                    We are trading on <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" target="_blank"><i class="fab fa-amazon"></i></a> as MiscSoleTrader and on <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" target="_blank"><i class="fab fa-ebay"></i></a> as MiscellaneousSoleTrader
-                </p>
-                
-                <!--Social Media links-->
-                <ul class="list-inline social-links">
-                    <h6 class="footer-caption uppercase general-sub list-inline-item">Social Media : </h6>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.facebook.com/Miscellaneous-Sole-Trader-2060490577578980/" title="Miscellaneous Sole Trader">
-                            <i class="fab fa-facebook" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="#">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item ">
-                        <a target="_blank" href="https://www.instagram.com/misc_sole_trader/" title="misc_sole_trade">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only ">Instagram</span>
-                        </a>
-                    </li>
+            <div id="menu" class="navside">
+                <!--Image which closes side Menu In on Left-->
+                <a href="#" class="close" onclick="closeSlideMenu()"><i class="fas fa-times"></i></a>
+                <a id="index" href="index.html" class="item"><i class="fas fa-hotel icon"></i>Home</a>
+                <a href="products.html" class="item"><i class="fas fa-clipboard-list icon"></i>Products</a>
+                <a href="about.html" class="item"><i class="fas fa-user-circle icon"></i>About Us</a>
+                <a href="contact.html" class="item active"><i class="fas fa-file-contract icon"></i>Contact Us</a>
+                <a href="delretref.html" class="item"><i class="fas fa-truck icon"></i>Delivery</a>
+                <form id="demo-2" class="item my-lg-0 last"><i class="fas fa-search icon"></i>
+                    <input id="searchbox" type="search" class="item last expanding-search mr-sm-2" aria-label="Search">
+                </form>
+                <ul>
+                    <!--Link to Mrketplaces and Social Media-->
+                    <li><a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" class="inline" target="_blank" title="MiscSoleTrader"><i class="fab fa-amazon"></i></a></li>
+                    <li><a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" class="inline" target="_blank" title="MiscellaneousSoleTrader"><i class="fab fa-ebay"></i></a></li>
+                    <li><a href="https://www.instagram.com/misc_sole_trader/" class="inline" target="_blank" title="misc_sole_trade"><i class="fab fa-instagram"></i> </a></li>
                 </ul>
             </div>
-        </div>
-    </footer>
+        </nav>
 
-    <!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function(){
-           emailjs.init('user_vkkHOAWvfokoar8VAvyCg');
-        })();
-    </script>
-    <!--doAlert();-->
-    <script src="support/sendemail.js"></script>
-
-
-	<!--Bootstrap link for jQuery-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!--Fontawesome link for FONTS-->
-    <script src="https://kit.fontawesome.com/011e87d520.js"></script>
-
-
+    </div>
+</header>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
-</body>
+        <section class="main-background container-fluid" id="container">
+            <div class="row" id="main">
+                <div class="col contact-form">
+        
+                    <!--Form Headings-->
+                    <h3 class="contact-heading uppercase text-center">Question or Query</h3>
+                    <h5 class="contact-caption text-center">(Please get in touch)</h5>
+        
+                    <!--Form-->
+                    <div class="center-form">
+                        <form id="contact-form">
+                            <input type="text" name="name" id="exampleInputName" class="form-contact" placeholder="Name*" required />
+                            <input type="text" name="amazon" id="amazonproduct" class="form-contact" placeholder="Product Name or URL (for Amazon)%" />
+                            <input type="text" name="ebay" id="ebayitem" class="form-contact" placeholder="eBay item Number" />
+                            <input type="email" name="email" id="emailaddress" class="form-contact" placeholder="Email*" required />
+                            <textarea rows="5" name="projectsummary" id="projectsummary" class="form-contact" placeholder="Description*" required></textarea>
+                            <p> * = Required fields</p>
+                            <p> % = If you already have placed an order on Amazon, please provide us with order number instead</p>
+                            <div class="form-row text-left">
+                                <div class="col-2">
+                                    <button type="submit" class="btn-contact btn-outline-contact">Send</button>
+                                </div>
+                                <div class="alert alert-success" id="success" style="display:none;">
+                                    <strong>Query submited Successfully!</strong> We will contact you soon.
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer class="fixed-footer container-fluid footer-container">
+            <div id="footer-details" class="row footer-text">
+                <div class="col-sm col-md col-lg">
+        
+                    <!--Company Information-->
+                    <p class="inline-block">
+                        We are trading on <a href="https://www.amazon.co.uk/s?me=A2N9GYWECZRD9K&marketplaceID=A1F83G8C2ARO7P" target="_blank"><i class="fab fa-amazon"></i></a> as MiscSoleTrader and on <a href="https://www.ebay.co.uk/str/miscellaneoussoletrader" target="_blank"><i class="fab fa-ebay"></i></a> as MiscellaneousSoleTrader
+                    </p>
+        
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    
+        <!--CDN for JSDelivery-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+
+        <!--JavaScript for connecting script file & User ID with SendEmail.JS-->
+        <script type="text/javascript">
+            (function(){
+                emailjs.init('user_vkkHOAWvfokoar8VAvyCg');
+            })();
+        </script>
+        <!--doAlert();-->
+        <script src="support/sendemail.js"></script>
+
+    	<!--Bootstrap link for jQuery-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+        <!--Fontawesome link for FONTS-->
+        <script src="https://kit.fontawesome.com/011e87d520.js"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    
+    </body>
 
 </html>
