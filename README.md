@@ -85,7 +85,7 @@ Menu options will be highlighted with different colour icon depends on which pag
 https://github.com/hidayatmansuri/hidayatmansuri.github.io/blob/master/images/Menu.gif
 
 ### Demo for Product Page
-To have clutter free website, I have embedded every product in button. People are used to with clicking on images for more information, I have linked every button with a Modal functionality from Bootstrap to provide customer with a message for buying options. For information or description about every product I have created Tooltip linked with ‘i’ icon next to product name.
+Product page have clean and tidy design where all the products image ahve been lined with product name right under every product along with "i" icon. 
 
 https://github.com/hidayatmansuri/hidayatmansuri.github.io/blob/master/images/Product.gif
 
