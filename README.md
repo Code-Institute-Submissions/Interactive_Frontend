@@ -79,35 +79,30 @@ https://github.com/hidayatmansuri/Interactive_Frontend/blob/master/support/Wiref
 ## Features
 In the modern days menu bar on larger screen devices embedded on right at the top of the page while for smaller screen device and for the same site menu bar become drop-down. That functionality is great but, if one customer navigating another customer on same website from different screen size devices will have difficulty as menu bar option(s) has been altered or located on different place(s). That is why on this project we have dicided to have same burger bar icon for all the devices located at same place with fix position, which means menu bar icon will be available at any point of website.
 
-### Demo for Menu
+### Dashboard
+We will have Dashboard with interactive charts. We are having 2 lots of charts from 2 different marketplaces. Where top charts are belongs to Amazon while bottom are belongs to eBay.
+
+For Amazon charts there are different ways to filter data, such as choosing Month from combo box located on top or can use brush-on function to choose perticuler duration on 2nd Line-Chart or Bar-Chart. Depends on choosen filter(s), Scattered-Plot-Chart will display orders against average price. While first Line-Chart will display weekly turn over and second will have data for units sold every week. Lastly, Bar-Chart will have information of average price of good sold every week.
+
+For eBay charts there is same functionality of combo box to choose month to display data accordingly on interactive charts. While Bar-Chart have brush-on functionality to choose particular duration. Line-Chart will show Daily turnover while Bar-Chart will show units sold everyday. Two Pie-Charts are showing Amount spend by every county and amount spen on every product respectively. Both Pie-Chart are interactive too, by clicking on any patricular bar will iterate Data accordingly on other related charts.
+
+### MenuBar
 Menu options will be highlighted with different colour icon depends on which page customer surfing on. Such as, if customer is on About Us page, icon of the About Us option in menu will be in dark pink colour.
 
-https://github.com/hidayatmansuri/hidayatmansuri.github.io/blob/master/images/Menu.gif
+https://github.com/hidayatmansuri/Interactive_Frontend/blob/master/images/MenuBar.gif
 
-### Demo for Product Page
+### Product Page
 Product page have clean and tidy design where all the products image have been lined with product name right under every product along with "i" icon. Description for all the product are hidden and will be displayed on demand. Description can be accessed by tapping or clicking on the "i" icon next to the product name.
 
-https://github.com/hidayatmansuri/hidayatmansuri.github.io/blob/master/images/Product.gif
+### Contact US
+Contact us form is fully functioning, where customer can fill require field(s) and send their qustions or query to us. This form has been created with help of emailjs. If required field(s) are left blank would show customer a error and form would not be send without those field information. At the end with required field(s) information, once 'Send' clicked or tapped, it will show customer a success message too.
 
-### Demo for Touch Functionality devices
-Previously, I had same functionality with hover over on buttons, which was not compatible with touchscreen functionality devices.  To come over this issue I have decided to add little ‘i’ icon for description which is compatible for all types of devices.
-
-https://github.com/hidayatmansuri/hidayatmansuri.github.io/blob/master/images/TouchFunctionality.gif
-
-### Demo for Marketplaces and Social Media links
-I have activated all the links for marketplaces and social media. Links with marketplace will take customers to Amazon and eBay, where they can make payment and choose from more products. While with social media links will take customer to our social media pages for activities we carry out and can follow for future updates.
-
-https://github.com/hidayatmansuri/hidayatmansuri.github.io/blob/master/images/Footer.gif
+https://github.com/hidayatmansuri/Interactive_Frontend/blob/master/images/ContactUs.gif
 
 ### Feature left to Implement
 I will be adding payment feature in future where customer can complete their order solely on website.
 
-Contact Us form is in function but submitting form will refresh form rather than sending data. For full form functionality I need to gain knowledge.
-
-### Demo for Contact Us page
-https://github.com/hidayatmansuri/hidayatmansuri.github.io/blob/master/images/ContactUs.gif
-
-In future there will home or landing page will be added too which will be linked to company logo.
+I have also added search field, but the coding have bug which I think it is outside of knowledge I have gained so far. However, I have tried to make it functonal and have achieved very little success. I am determined to make it work and will have that functionality up and running in very near future as I ssek more knowledge.
 
 ## Testing
 I have tested this project on number of devices (iPhone5, iPhoneX, HTC U12+, One Plus One, Pocophone, Samsung s20e, Samsung Tablet, iPad, Honor 7) as well as on desktop I have used majority of web browser (Google Chrome, Mozilla, Safari, IE10, Microsoft Edge, Opera, Vivaldi).
@@ -124,16 +119,13 @@ About US and Delivery pages are only containing information about company and se
 
 Contact Us page have required fields for customer to get in touch with company related to products or order(s). Within the form there are some mandatory fields which needs to be filled with required information before submitting or jumping on next field.
 
-### Demo for Contact Us page
-https://github.com/hidayatmansuri/hidayatmansuri.github.io/blob/master/images/ContactUs.gif
-
 ## Deployment
 I have deployed this project on GitHub through AWS Cloud9 using its command base terminal functionality, where it resides under MilestoneProjectMST repositories.
 
 To deploy this project on github using AWS cloud9 commands as follows:
 1.  git init - to get into github
 2.  git status - to find out all changes have been made within files
-3.  git add . - to add all amended files to hithub server
+3.  git add . - to add all amended files to github server
 4.  git commit -m - to commit all changes with reason
 5.  git push - to add all commited changes to github server which will be followed by username and password for particular account
 
@@ -150,7 +142,7 @@ To deploy and publish this project using GitHub Desktop Appliaction, steps as fo
 Both of these methods stored data on same place under my account but one is command base application while another one is desktop application.
 
 ### Command base
- To upload or moving data using this method requires command
+To upload or moving data using this method requires command
 
 ### Desktop Application
 With this method few clicks will upload and move your data on required place or server
@@ -163,17 +155,12 @@ All the content on this website including images are all taken by me and have fu
 ### Icons
 Most of the icons are from Fontawesome website which are free to use as well as I have provided script where necessary.
 
-### Tooltip
-Tooltip functionality idea was inspired from Sonar Systems youtube video which can be found from following link
-
-(https://www.youtube.com/watch?v=yhkf5Dl0rug)
-
 ### GIFs
 All the GIFs for this project have been created using ScreenToGif software which is free to use.
 
 https://www.screentogif.com/
 
-### Wireframe
+### Balsamiq Mockups 3
 Wireframe created for this project was using 7 days trial period software
 
 https://wireframe.cc/pro/dashboard
