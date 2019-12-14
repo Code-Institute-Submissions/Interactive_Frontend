@@ -44,20 +44,20 @@ To access Menu option, please click or tap on burger bar icon located on left to
 
 ### How Charts on Dashboard will work?
 Charts on Dashboard are interactive, where charts on the begging of page is belongs to sale on Amazon for last 6 months. There are 3 ways to interact with charts.
-(1) by selecting a month from combo box which, will display related data on Chart.
-(2) Using brush-on function in 2nd Line-Chart will display related data on rest of 3 charts.
-(3) Using brush-on function in Bar-Chart which, will display data on related interactive charts
+1. by selecting a month from combo box which, will display related data on Chart.
+2. Using brush-on function in 2nd Line-Chart will display related data on rest of 3 charts.
+3. Using brush-on function in Bar-Chart which, will display data on related interactive charts
 
 Charts on lower area of page are belongs to sale on eBay for last 4 months. There are 3 different ways to interact with these charts.
-(1) by selecting a month from combo box which, will display related data on Chart.
-(2) By using brush-on function on Bar-Chart, which will display related data on other charts.
-(3) By tapping or clicking on either of Pie-Chart will interact with related charts to display data.
+1. by selecting a month from combo box which, will display related data on Chart.
+2. By using brush-on function on Bar-Chart, which will display related data on other charts.
+3. By tapping or clicking on either of Pie-Chart will interact with related charts to display data.
 
 ### How would I find description of the product?
-Under every product image there is product name, right next to product name there is “i” icon. On touchscreen devices customer have to tap on i-icon or on non touch base devices will have to click-on for description to be appear, which will drop down under related product. Clicking or taping on same i-icon will roll-up description.
+Under every product image there is product name, right next to product name there is “i” icon. On touchscreen devices customer have to tap on “i” icon or on non touch base devices will have to click-on for description to be appear, which will drop down under related product. Clicking or taping on same “i” icon will roll-up description.
 
 ### How can I buy a product?
-Click or Tap on little i-icon next to any product name, which will bring description down, where there will be link to related marketplace for customer to carry on their transaction to complete their purchase
+Click or Tap on little “i” icon next to any product name, which will bring description down, where there will be link to related marketplace for customer to carry on their transaction to complete their purchase
 
 ### How can I visit Instagram page?
 All social media links are located inside sliding menu-bar. To access social media, please click or tap on burger icon located on left-top corner of screen. Which will bring Menu-Bar out from left, where there are social media links are displayed right at the end of service list.
@@ -66,34 +66,37 @@ All social media links are located inside sliding menu-bar. To access social med
 If you click or tap Burger-bar icon located on left top corner of the screen, which will bring Menu out. From that list, please click or tap on 'Contact Us' page. This will bring customr to a contact us page, where fill in required information and click 'send' button will send us your any question or query you have.
 
 ### How to locate us on the map?
-From the home page, please tap or click on burger-bar icon located on top-left corner which will bring menu-bar out. From the list of menu, please click or tap on 'About Us' page where location information has been displayed right at the end of the page along with map.
+From the home page, please tap or click on burger-bar icon located on top-left corner which will bring menu-bar out. From the list of menu, please click or tap on 'About Us' page where location information has been displayed right at the end of the page along with map and Company's Aim.
+
+### What is Return, Refund and Delivery Policy?
+To access to Return, Refund and Delivery Policy for the company, please click or tap on burger bar icon located left top corner of the page, which will bring you list of menu(s) from left. from this list please click or tap on "Delivery" option.
 
 ### Wireframe
-To design this website, I have created a design using Wireframe technology which can be found on Github link as follows:
+I have created wireframe for this project to have overview of this website, how it will look and where all option(s) will be located based on requirement. This wireframe can be found on following link:
 
-https://github.com/hidayatmansuri/hidayatmansuri.github.io/tree/master/MST_Wireframe
+https://github.com/hidayatmansuri/Interactive_Frontend/blob/master/support/Wireframe_MST.bmpr
 
 ## Features
-Most of the website menu bar is embedded within nav bar on top of the website which can only be accessed by reaching on top of the website can be frustrating. To come over this issue I have kept menu bar floating on top left corner of the website which can be access from anywhere on website. For screen size over 1200-pixel menu background will be transparent for modern look. For smaller device there will be menu background matching header colour to avoid menu options getting lost within contain of the website particularly for Delivery and About Us pages.
-
-Moreover, menu options will be highlighted with different colour depends on which page customer surfing on. Such as, if customer is on About Us page, About Us option in menu will be in orange colour.
+In the modern days menu bar on larger screen devices embedded on right at the top of the page while for smaller screen device and for the same site menu bar become drop-down. That functionality is great but, if one customer navigating another customer on same website from different screen size devices will have difficulty as menu bar option(s) has been altered or located on different place(s). That is why on this project we have dicided to have same burger bar icon for all the devices located at same place with fix position, which means menu bar icon will be available at any point of website.
 
 ### Demo for Menu
+Menu options will be highlighted with different colour icon depends on which page customer surfing on. Such as, if customer is on About Us page, icon of the About Us option in menu will be in dark pink colour.
+
 https://github.com/hidayatmansuri/hidayatmansuri.github.io/blob/master/images/Menu.gif
 
+### Demo for Product Page
 To have clutter free website, I have embedded every product in button. People are used to with clicking on images for more information, I have linked every button with a Modal functionality from Bootstrap to provide customer with a message for buying options. For information or description about every product I have created Tooltip linked with ‘i’ icon next to product name.
 
-### Demo for Product Page
 https://github.com/hidayatmansuri/hidayatmansuri.github.io/blob/master/images/Product.gif
 
+### Demo for Touch Functionality devices
 Previously, I had same functionality with hover over on buttons, which was not compatible with touchscreen functionality devices.  To come over this issue I have decided to add little ‘i’ icon for description which is compatible for all types of devices.
 
-### Demo for Touch Functionality devices
 https://github.com/hidayatmansuri/hidayatmansuri.github.io/blob/master/images/TouchFunctionality.gif
 
+### Demo for Marketplaces and Social Media links
 I have activated all the links for marketplaces and social media. Links with marketplace will take customers to Amazon and eBay, where they can make payment and choose from more products. While with social media links will take customer to our social media pages for activities we carry out and can follow for future updates.
 
-### Demo for Marketplaces and Social Media links
 https://github.com/hidayatmansuri/hidayatmansuri.github.io/blob/master/images/Footer.gif
 
 ### Feature left to Implement
