@@ -85,7 +85,7 @@ Menu options will be highlighted with different colour icon depends on which pag
 https://github.com/hidayatmansuri/hidayatmansuri.github.io/blob/master/images/Menu.gif
 
 ### Demo for Product Page
-Product page have clean and tidy design where all the products image ahve been lined with product name right under every product along with "i" icon. 
+Product page have clean and tidy design where all the products image have been lined with product name right under every product along with "i" icon. Description for all the product are hidden and will be displayed on demand. Description can be accessed by tapping or clicking on the "i" icon next to the product name.
 
 https://github.com/hidayatmansuri/hidayatmansuri.github.io/blob/master/images/Product.gif
 
