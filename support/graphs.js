@@ -99,7 +99,7 @@ function makeGraphs(error, salesMonthly) {
 
         dc.barChart('#average_price')
             .width($('#chartCumulativeDVH').innerWidth())
-            .height($('#chartCumulativeDVH').outerHeight())
+            .height($('#chartCumulativeDVH').innerHeight())
             /*.width(500)
             .height(300)*/
             .margins({ top: 10, right: 50, bottom: 30, left: 50 })
@@ -134,7 +134,7 @@ function makeGraphs(error, salesMonthly) {
 
         dc.scatterPlot('#average_price_unit')
             .width($('#chartCumulativeDVH').innerWidth())
-            .height($('#chartCumulativeDVH').outerHeight())
+            .height($('#chartCumulativeDVH').innerHeight())
             /*.width(1000)
             .height(400)*/
             .x(d3.scale.linear().domain([minOrder, maxOrder]))

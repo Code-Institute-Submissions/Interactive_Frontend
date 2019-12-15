@@ -43,7 +43,7 @@ To manage this business will have interactive dashboard where all business sales
 To access Menu option, please click or tap on burger bar icon located on left top corner of the screen. Which will bring sliding Menu out from left.
 
 ### How Charts on Dashboard will work?
-Charts on Dashboard are interactive, where charts on the begging of page is belongs to sale on Amazon for last 6 months. There are 3 ways to interact with charts.
+Charts on Dashboard are interactive, where charts on the beginning of page is belongs to sale on Amazon for last 6 months. There are 3 ways to interact with charts.
 1. by selecting a month from combo box which, will display related data on Chart.
 2. Using brush-on function in 2nd Line-Chart will display related data on rest of 3 charts.
 3. Using brush-on function in Bar-Chart which, will display data on related interactive charts
