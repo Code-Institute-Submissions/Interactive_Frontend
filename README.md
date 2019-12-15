@@ -74,7 +74,7 @@ To access to Return, Refund and Delivery Policy for the company, please click or
 ### Wireframe
 I have created wireframe for this project to have overview of this website, how it will look and where all option(s) will be located based on requirement. This wireframe can be found on following link:
 
-https://github.com/hidayatmansuri/Interactive_Frontend/blob/master/support/Wireframe_MST.bmpr
+https://github.com/hidayatmansuri/Interactive_Frontend/tree/master/Wireframe
 
 ## Features
 In the modern days menu bar on larger screen devices embedded on right at the top of the page while for smaller screen device and for the same site menu bar become drop-down. That functionality is great but, if one customer navigating another customer on same website from different screen size devices will have difficulty as menu bar option(s) has been altered or located on different place(s). That is why on this project we have decided to have same burger bar icon for all the devices located at same place with fix position, which means menu bar icon will be available at any point of website.
@@ -104,6 +104,8 @@ I will be adding payment feature in future where customer can complete their ord
 
 I have also added search field, but the coding has bug which I think it is outside of knowledge I have gained so far. However, I have tried to make it functional and have achieved very little success. I am determined to make it work and will have that functionality up and running in very near future as I seek more knowledge.
 
+Charts on Dashboard are appearing nicely on first attempt which are located on home page of this project. Once we visit another page and come back on Dashboard, charts normally doesn't appear automatically which seems confusing. I have tried to find solution and but have no success so far. To make all charts re-appear please use "CTRL + refresh".
+
 ## Testing
 I have tested this project on number of devices (iPhone5, iPhoneX, HTC U12+, Google Pixel 3 XL, One Plus One, Pocophone, Samsung s20e, Samsung Tablet, iPad, Honor 7) as well as on desktop I have used majority of web browser (Google Chrome, Mozilla, Safari, IE10, Microsoft Edge, Microsoft Edge(Chromium Beta), Opera, Vivaldi). Also, I have tested this project on different desktop with different configuration, where I have notices that Charts are taking bit longer on older generation device while with newer generation it's lot quicker comparatively.
 
@@ -114,6 +116,18 @@ Contact Us page have required fields for customer to get in touch with company r
 Dashboard for this project does work but, sometime required refresh on first time for charts to be appear depends on device and processor. Also, charts do not resize themselves if device turn at 90 degree vertically or horizontally, screen needs to be refreshed and charts will adjust themselves. I have tried to keep charts at fixed size but would look skeleton on some devices. That is when I have come across with charts property called ".width($('#chartCumulativeDVH').innerWidth())" for width and ".height($('#chartCumulativeDVH').innerHeight())" for height. This property does adjust chart according to screen size but change in screen size does required refresh for these properties to work.
 
 ## Deployment
+
+To deploy this project or repositiory from GitHub to local machine, following steps will help you get it done:
+1. For this we will use Git Bash, which can be installed from https://git-scm.com/downloads
+2. once GitBash is installed and ready to use, we will open GitBash
+3. Here we will use "git clone" command to copy repositiory to local machine
+4. for git clone command we need URL from where repository needs to be cloned from, which you can get it from github using this URL (https://github.com/hidayatmansuri/Interactive_Frontend)
+5. Just above list of files there will be green button saying "Clone or Download", that is where repositiory URL resides
+6. Once you have copy that URL, on GitBash type command "git clone" and copy that URL, which will look as follows on your GitBash
+7. git clone https://github.com/hidayatmansuri/Interactive_Frontend.git
+8. and press ENTER
+9. this will copy whole respository on your working directory
+
 I have deployed this project on GitHub through AWS Cloud9 using its command base terminal functionality, where it resides under Interactive_Frontend repositories.
 
 To deploy this project on github using AWS cloud9 commands as follows:
@@ -134,6 +148,18 @@ To deploy and publish this project using GitHub Desktop Application, steps as fo
 5.  Once committed all the changes will prompt user with push notification which will push all the changes to related server
 
 Both of these methods stored data on same place under my account, but one is command base application while another one is desktop application.
+
+How emailjs will work with project
+
+To make emailjs work with your project, you need to start creating a free account on emailjs.com (https://dashboard.emailjs.com/account/create). Once account is created, varified and logged in you start creating connection as follows:
+1. From Email Services add new service
+2. Where you will be presented with list of providers to choose one from
+3. Once provider is chosen you have to connect account and allow in the request for permission
+4. This will provide you with a API key to connect emailjs with your project or website. API key can also be retrieved from Account tab.
+5. In your left-side panel go to installation and copy your API key initialization just how shows it to your HTML page.
+6. Then, go to Email Templates and you already should have one created, otherwise just create a new one.
+7. Once all that done, go to Installtion tab on left had side of pan and copy that script to your html code just before body tag closes and replace your API key in emailjs.init
+8. To make it all work you can create a whole new JS file and connect with html page or write script just after installtion code you have copied from emailjs
 
 ### Command base
 To upload or moving data using this method requires command
